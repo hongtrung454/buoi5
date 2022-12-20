@@ -1,4 +1,8 @@
-
+.container
+{
+  display: flex;
+  justify-content: space-around;
+}
 .frame
 {
   position: relative;
@@ -13,6 +17,12 @@
   background-image: url("https://tympanus.net/Development/HoverEffectIdeas/img/14.jpg");
   
 }
+.frame.frame2
+{
+  background-image: url(" https://tympanus.net/Development/HoverEffectIdeas/img/2.jpg");
+ 
+}
+
 h2{
   font-weight: 300;
   display: block;
@@ -48,24 +58,26 @@ h2{
   position: absolute;
   bottom: 0;
   left: 0;
-  right: 5%;
-  padding: 2em;
+
+
   width: 100%;
   opacity: 0;
   transform: translate(0);
   letter-spacing: 1px;
   font-size: 68.5%;
   transition: transform 0.35s, color 0.35s;
+  font-size: bold;
+  font-weight: 200;
 }
 .inner-frame
 {
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(220, 220, 220, 0.52), rgba(68, 68, 68, 0.73));
+  background: linear-gradient(to bottom, rgb(222, 222, 222), rgba(29, 32, 79, 0.315));
   position: absolute;
   background-repeat: no-repeat;
   transition: 0.35s;
-  opacity: 0;
+  opacity: 0.5;
   
 
 }
