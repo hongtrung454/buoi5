@@ -19,7 +19,7 @@
 }
 .frame.frame2
 {
-  background-image: url(" https://tympanus.net/Development/HoverEffectIdeas/img/2.jpg");
+  background-image: url(" https://tympanus.net/Development/HoverEffectIdeas/img/11.jpg");
  
 }
 
@@ -98,4 +98,70 @@ h2{
   color: white;
   transform: translateY(-50px);
   
+}
+.frame2 
+{
+  position: relative;
+}
+.inner-frame2
+{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+ 
+}
+.text2 h2
+{
+  width: 85%;
+  height: 100%;
+  top: 10%;
+  transform: translateY(-10px);
+  color:#FFF;
+  word-spacing: -0.15em;
+  text-transform: uppercase;
+  position: absolute;
+  text-align: end;
+  font-size: 500;
+  transition: transform 0.35s;
+}
+.text2 h2 .marley
+{
+  font-weight: 800;
+}
+.text2 p
+{
+  bottom: -10%;
+  right: 10%;
+  color: #FFF;
+  position: absolute;
+  text-align: end;
+  opacity: 0;
+  text-transform: uppercase;
+  font-size: small;
+  transition: transform 0.35s, opacity 0.35s;
+  font-weight: 80;
+  
+
+}
+.frame2:hover .text2 p
+{
+  opacity: 1;
+  transform: translateY(-70px);
+}
+.frame2:hover h2{
+  transform: translateY(-25px);
+}
+ .border
+{
+  width: 80%;
+  height: 50%;
+  position: absolute;
+  left: 10%;
+  opacity: 0;
+  border-bottom: 6px solid white;
+  transition: transform 0.35s, opacity 0.5s;
+} 
+.frame2:hover .border{
+  transform: translateY(-100px);
+  opacity: 1;
 }
